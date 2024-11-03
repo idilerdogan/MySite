@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using MySite.BL.Abstract;
 using MySite.Entities.Entities.Concrete;
 using MySite_MVC.Models.VMs;
 
@@ -26,7 +27,7 @@ namespace MySite.MVC.Controllers
         [HttpGet]
         public IActionResult Users()
         {
-            var users = userManager.GetAllInclude(null, p => p.Roller).ToList();
+            var users = userManager.GetAllInclude(null, p => p.Roles).ToList();
             return View(users);
         }
         [HttpGet]
@@ -62,7 +63,7 @@ namespace MySite.MVC.Controllers
                 new Claim(ClaimTypes.MobilePhone,user.Phone),
                 new Claim(ClaimTypes.Email,user.Email + " " + user.Email),
                 new Claim(ClaimTypes.Role,roles),
-                new Claim(ClaimTypes.UserData,user.PhotoPath)
+                //new Claim(ClaimTypes.UserData,user.PhotoPath)
 
             };
             var claimIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
@@ -132,7 +133,7 @@ namespace MySite.MVC.Controllers
             userManager.Create(myUser);
 
             #region Kullaniciya Default olarak user rolü eklenir
-            var role = roleManager.Get(p => p.RoleAdi == "user"); // user role db'den cekilir
+            var role = roleManager.Get(p => p.RoleName == "user"); // user role db'den cekilir
             myUser.Roles = new List<Role>();
             myUser.Roles.Add(role);
             userManager.Update(myUser);

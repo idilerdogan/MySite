@@ -17,7 +17,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MySite.Entities\MySite.Entities.csproj" />
-    <ProjectReference Include="..\MySite.MVC\MySite.MVC.csproj" />
   </ItemGroup>
 
 </Project>

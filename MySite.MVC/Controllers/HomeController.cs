@@ -4,6 +4,8 @@ using MySite_MVC.Models;
 
 namespace MySite_MVC.Controllers
 {
+
+
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
