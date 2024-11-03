@@ -10,12 +10,12 @@ namespace MySite.Entities.Entities.Concrete
         public string? AreaName { get; set; }
         public string? ClassName { get; set; }
         public string? CssName { get; set; }
-        public string? IConName { get; set; }
+        public string? IconName { get; set; }
 
         public int? OrderNo { get; set; }
         public int? ParentMenuId { get; set; }
         public MainMenu? ParentMenu { get; set; }
         public int? RoleId { get; set; }
-        public Role? Role { get; set; }
+        public Role? Roles { get; set; }
     }
 }

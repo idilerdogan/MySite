@@ -25,7 +25,7 @@ namespace MySite_MVC.Models.VMs
 
         [Required(ErrorMessage = "Gsm Alani zorunludur")]
         [DataType(DataType.PhoneNumber)]
-        public string Gsm { get; set; }
+        public string Phone { get; set; }
 
         [Required(ErrorMessage = "Kullanıcı Adı Alani zorunludur")]
         [MinLength(2, ErrorMessage = "En az 2 karakter olmalidir")]

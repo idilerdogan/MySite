@@ -1,0 +1,14 @@
+﻿@model List<MainMenu>
+
+@foreach(var mainmenu in Model.OrderBy(p=>p.OrderNo))
+{
+    <li class="nav-item">
+        <a asp-action="@mainmenu.ActionName"
+           asp-controller="@mainmenu.ControllerName"
+           asp-area="@mainmenu.AreaName"
+           class="@mainmenu.ClassName">
+            <i class="@mainmenu.IconName"></i>
+            <p>@mainmenu.MenuName</p>
+        </a>
+    </li>
+}

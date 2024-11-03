@@ -1,0 +1,108 @@
+﻿@using MySite_MVC.Models.VMs
+@model UserInsertVM
+
+
+
+<div class="card">
+    <div class="card-header">
+        <p> Kayıt Ekranı</p>
+    </div>
+    <div class="card-body">
+        <form action="UserInsert" method="post">
+            <div class="row">
+
+
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=Name>Adınız</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="Name" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=SurName>Soyadınız</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="SurName" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="SurName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=UserName>Kullanıcı Adınız</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="UserName" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=Password>Şifrenizi Belirleyiniz</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="Password" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=RePassword>Şifrenizi Tekrar Giriniz</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="RePassword" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="RePassword" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=Email>Mailiniz</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="Email" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-2">
+                        <label asp-for=Phone>Cep Telefon Numaranız</label>
+                    </div>
+                    <div class="col-6">
+                        <input asp-for="Phone" class="form-control-sm">
+                    </div>
+                    <div class="col-4">
+                        <span asp-validation-for="Phone" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card-footer">
+                <button type="submit" class="btn btn-success">Kaydet</button>
+                <button type="reset" class="btn btn-danger">Temizle</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts
+    {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+}

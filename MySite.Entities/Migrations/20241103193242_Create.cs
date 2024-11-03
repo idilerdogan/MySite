@@ -3,10 +3,12 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
+#pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
+
 namespace MySite.Entities.Migrations
 {
     /// <inheritdoc />
-    public partial class InitCreate : Migration
+    public partial class Create : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -57,10 +59,10 @@ namespace MySite.Entities.Migrations
                     AreaName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: true),
                     ClassName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CssName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
-                    IConName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
+                    IconName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     OrderNo = table.Column<int>(type: "int", nullable: true),
                     ParentMenuId = table.Column<int>(type: "int", nullable: true),
-                    RoleId = table.Column<int>(type: "int", nullable: true),
+                    RolesId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -72,8 +74,8 @@ namespace MySite.Entities.Migrations
                         principalTable: "MainMenus",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_MainMenus_Roles_RoleId",
-                        column: x => x.RoleId,
+                        name: "FK_MainMenus_Roles_RolesId",
+                        column: x => x.RolesId,
                         principalTable: "Roles",
                         principalColumn: "Id");
                 });
@@ -216,11 +218,11 @@ namespace MySite.Entities.Migrations
                 columns: table => new
                 {
                     RolesId = table.Column<int>(type: "int", nullable: false),
-                    UserId = table.Column<int>(type: "int", nullable: false)
+                    UsersId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_RoleUser", x => new { x.RolesId, x.UserId });
+                    table.PrimaryKey("PK_RoleUser", x => new { x.RolesId, x.UsersId });
                     table.ForeignKey(
                         name: "FK_RoleUser_Roles_RolesId",
                         column: x => x.RolesId,
@@ -228,8 +230,8 @@ namespace MySite.Entities.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_RoleUser_Users_UserId",
-                        column: x => x.UserId,
+                        name: "FK_RoleUser_Users_UsersId",
+                        column: x => x.UsersId,
                         principalTable: "Users",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -275,6 +277,16 @@ namespace MySite.Entities.Migrations
                         column: x => x.UserId,
                         principalTable: "Users",
                         principalColumn: "Id");
+                });
+
+            migrationBuilder.InsertData(
+                table: "MainMenus",
+                columns: new[] { "Id", "ActionName", "AreaName", "ClassName", "ControllerName", "CreateDate", "CssName", "IconName", "MenuName", "OrderNo", "ParentMenuId", "RolesId" },
+                values: new object[,]
+                {
+                    { 1, "Index", "Admin", "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4505), "", null, "Home", null, null, null },
+                    { 2, "Sign In", "User", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4516), "", null, "Home", null, null, null },
+                    { 3, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4518), "", null, "User", null, null, null }
                 });
 
             migrationBuilder.CreateIndex(
@@ -338,9 +350,9 @@ namespace MySite.Entities.Migrations
                 column: "ParentMenuId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MainMenus_RoleId",
+                name: "IX_MainMenus_RolesId",
                 table: "MainMenus",
-                column: "RoleId");
+                column: "RolesId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Projects_Id",
@@ -364,9 +376,9 @@ namespace MySite.Entities.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_RoleUser_UserId",
+                name: "IX_RoleUser_UsersId",
                 table: "RoleUser",
-                column: "UserId");
+                column: "UsersId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Skills_Id",

@@ -24,8 +24,4 @@
     <ProjectReference Include="..\MySite.Entities\MySite.Entities.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\Component\" />
-  </ItemGroup>
-
 </Project>

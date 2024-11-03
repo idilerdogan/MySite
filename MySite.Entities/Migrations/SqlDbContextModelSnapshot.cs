@@ -234,7 +234,7 @@ namespace MySite.Entities.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("IConName")
+                    b.Property<string>("IconName")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -261,6 +261,44 @@ namespace MySite.Entities.Migrations
                     b.HasIndex("RoleId");
 
                     b.ToTable("MainMenus");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Home",
+                            CreateDate = new DateTime(2024, 11, 3, 22, 35, 51, 50, DateTimeKind.Local).AddTicks(1855),
+                            CssName = "",
+                            MenuName = "Home",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ActionName = "Sign In",
+                            AreaName = "User",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 3, 22, 35, 51, 50, DateTimeKind.Local).AddTicks(1868),
+                            CssName = "",
+                            MenuName = "Home",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 3, 22, 35, 51, 50, DateTimeKind.Local).AddTicks(1869),
+                            CssName = "",
+                            MenuName = "User",
+                            RoleId = 1
+                        });
                 });
 
             modelBuilder.Entity("MySite.Entities.Entities.Concrete.Project", b =>
@@ -504,13 +542,13 @@ namespace MySite.Entities.Migrations
                         .WithMany()
                         .HasForeignKey("ParentMenuId");
 
-                    b.HasOne("MySite.Entities.Entities.Concrete.Role", "Role")
+                    b.HasOne("MySite.Entities.Entities.Concrete.Role", "Roles")
                         .WithMany()
                         .HasForeignKey("RoleId");
 
                     b.Navigation("ParentMenu");
 
-                    b.Navigation("Role");
+                    b.Navigation("Roles");
                 });
 
             modelBuilder.Entity("MySite.Entities.Entities.Concrete.Project", b =>

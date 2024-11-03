@@ -12,8 +12,8 @@ using MySite.Entities.DbContexts;
 namespace MySite.Entities.Migrations
 {
     [DbContext(typeof(SqlDbContext))]
-    [Migration("20241103144256_InitCreate")]
-    partial class InitCreate
+    [Migration("20241103193242_Create")]
+    partial class Create
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -237,7 +237,7 @@ namespace MySite.Entities.Migrations
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<string>("IConName")
+                    b.Property<string>("IconName")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
@@ -252,7 +252,7 @@ namespace MySite.Entities.Migrations
                     b.Property<int?>("ParentMenuId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("RoleId")
+                    b.Property<int?>("RolesId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
@@ -261,9 +261,44 @@ namespace MySite.Entities.Migrations
 
                     b.HasIndex("ParentMenuId");
 
-                    b.HasIndex("RoleId");
+                    b.HasIndex("RolesId");
 
                     b.ToTable("MainMenus");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Home",
+                            CreateDate = new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4505),
+                            CssName = "",
+                            MenuName = "Home"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ActionName = "Sign In",
+                            AreaName = "User",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4516),
+                            CssName = "",
+                            MenuName = "Home"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4518),
+                            CssName = "",
+                            MenuName = "User"
+                        });
                 });
 
             modelBuilder.Entity("MySite.Entities.Entities.Concrete.Project", b =>
@@ -456,12 +491,12 @@ namespace MySite.Entities.Migrations
                     b.Property<int>("RolesId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("UsersId")
                         .HasColumnType("int");
 
-                    b.HasKey("RolesId", "UserId");
+                    b.HasKey("RolesId", "UsersId");
 
-                    b.HasIndex("UserId");
+                    b.HasIndex("UsersId");
 
                     b.ToTable("RoleUser");
                 });
@@ -507,13 +542,13 @@ namespace MySite.Entities.Migrations
                         .WithMany()
                         .HasForeignKey("ParentMenuId");
 
-                    b.HasOne("MySite.Entities.Entities.Concrete.Role", "Role")
+                    b.HasOne("MySite.Entities.Entities.Concrete.Role", "Roles")
                         .WithMany()
-                        .HasForeignKey("RoleId");
+                        .HasForeignKey("RolesId");
 
                     b.Navigation("ParentMenu");
 
-                    b.Navigation("Role");
+                    b.Navigation("Roles");
                 });
 
             modelBuilder.Entity("MySite.Entities.Entities.Concrete.Project", b =>
@@ -547,7 +582,7 @@ namespace MySite.Entities.Migrations
 
                     b.HasOne("MySite.Entities.Entities.Concrete.User", null)
                         .WithMany()
-                        .HasForeignKey("UserId")
+                        .HasForeignKey("UsersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

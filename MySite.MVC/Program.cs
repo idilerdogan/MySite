@@ -35,10 +35,10 @@ namespace MySite_MVC
             #region Cookie Base Authentication
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
             {
-                options.Cookie.Name = "TicariCookie";
+                options.Cookie.Name = "MySiteCookie";
                 options.LoginPath = "/Account/Login";
                 options.LogoutPath = "/Account/Logout";
-                options.AccessDeniedPath = "/Account/Eri?imHatas?";
+                options.AccessDeniedPath = "/Account/ErisimHatasý";
                 options.Cookie.HttpOnly = true; //Taray?c?daki di?er scriptler okuyamas?n diye güvenlik 
                 options.Cookie.SameSite = SameSiteMode.Strict; //Ba?ka taray?c?lar taraf?ndan ula??lamas?n diye güvenlik önlemi
                 options.ExpireTimeSpan = TimeSpan.FromMinutes(10); //
