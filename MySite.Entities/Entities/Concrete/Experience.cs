@@ -2,7 +2,7 @@
 
 namespace MySite.Entities.Entities.Concrete
 {
-    public class Experiance : BaseEntity
+    public class Experience : BaseEntity
     {
         public string ExPlace { get; set; }
         public string ExTitle { get; set; }

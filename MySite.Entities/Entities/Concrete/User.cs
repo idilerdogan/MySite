@@ -16,7 +16,7 @@ namespace MySite.Entities.Entities.Concrete
         public List<Achievement>? Achievements { get; set; } = new List<Achievement>();
         public List<Activitie>? Activities { get; set; } = new List<Activitie>();
         public List<Education>? Education { get; set; } = new List<Education>();
-        public List<Experiance>? Experiances { get; set; } = new List<Experiance>();
+        public List<Experience>? Experiances { get; set; } = new List<Experience>();
         public List<Language>? Languages { get; set; } = new List<Language>();
         public List<Project>? Projects { get; set; } = new List<Project>();
         public List<Skill>? Skills { get; set; } = new List<Skill>();

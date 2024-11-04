@@ -24,4 +24,9 @@
     <ProjectReference Include="..\MySite.Entities\MySite.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Areas\User\" />
+  </ItemGroup>
+
 </Project>

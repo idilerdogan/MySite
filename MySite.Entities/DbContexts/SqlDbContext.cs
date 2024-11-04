@@ -12,7 +12,7 @@ namespace MySite.Entities.DbContexts
         public DbSet<Activitie> Activities { get; set; }
 
         public DbSet<Education> Educations { get; set; }
-        public DbSet<Experiance> Experiances { get; set; }
+        public DbSet<Experience> Experiences { get; set; }
         public DbSet<Language> Languages { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Project> Projects { get; set; }
@@ -34,7 +34,7 @@ namespace MySite.Entities.DbContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("server=.;Database=MySite;Trusted_Connection=true;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("server=IDILERDOGAN\\MSSQLSERVER01;Database=MySite;Trusted_Connection=true;TrustServerCertificate=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

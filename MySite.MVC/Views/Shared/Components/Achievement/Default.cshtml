@@ -1,19 +1,24 @@
 ﻿@model List<Achievement>
 
 
-<h2 class="mb-5">@Model.GetType().GenericTypeArguments </h2>
+<h2 class="mb-5">@nameof(Achievement)s </h2>
 
-    @foreach (var item in Model.OrderBy(p => p.Id))
+    @foreach (var item in Model.OrderByDescending(p => p.Id))
     {
 
 
             <a class="nav-link js-scroll-trigger">
-                <div class="subheading mb-3"> 
+                 <div class="mt-4">
+                     <p>
                     @item.Description
-                </div>
+                    </p>
+                 </div>
+               
                 <div class="flex-shrink-0">
-                     @item.AcDate.Year
-                <div/> 
+                    <span class="text-primary">
+                         @item.AcDate.Year
+                    </span>
+                </div> 
             </a>
 
 

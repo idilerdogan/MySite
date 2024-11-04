@@ -20,7 +20,7 @@ namespace MySite.Entities.EntityConfig.Concrete
             builder.HasIndex(p => p.Email).IsUnique();
             builder.HasIndex(p => p.UserName).IsUnique();
 
-            builder.HasData((new User() { Id = 1, CreateDate = DateTime.Now, Name = "İdil", SurName = "Erdoğan", Password = "qwe", UserName = "idilerdogan", Email="idilerdogan@sabanciuniv.edu", Phone="+90 539 371 69 85", }));
+            builder.HasData((new User() { Id = 1, CreateDate = DateTime.Now, Name = "İdil", SurName = "Erdoğan", Password = "qwe", UserName = "idilerdogan", Email = "idilerdogan@sabanciuniv.edu", Phone = "+90 539 371 69 85", Description = "", }));
         }
     }
 }

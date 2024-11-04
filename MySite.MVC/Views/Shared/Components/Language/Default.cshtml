@@ -1,0 +1,21 @@
+﻿@model List<Language>
+
+
+<h2 class="mb-5">@nameof(Language)s </h2>
+
+@foreach (var item in Model.OrderBy(p => p.Id))
+{
+
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+           
+            <div class="subheading mb-3">@item.Languages</div>
+            
+        </div>
+        
+    </div>
+
+    
+
+
+}

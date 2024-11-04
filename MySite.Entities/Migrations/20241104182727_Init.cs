@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace MySite.Entities.Migrations
 {
     /// <inheritdoc />
-    public partial class Create : Migration
+    public partial class Init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -284,8 +284,8 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "AcDate", "CreateDate", "Description", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateOnly(2020, 2, 1), new DateTime(2024, 11, 4, 11, 4, 53, 652, DateTimeKind.Local).AddTicks(5557), "Decleration of honor in dean’s honor list for maintaining a high GPA", null },
-                    { 2, new DateOnly(2016, 1, 1), new DateTime(2024, 11, 4, 11, 4, 53, 652, DateTimeKind.Local).AddTicks(5603), "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee", null }
+                    { 1, new DateOnly(2020, 2, 1), new DateTime(2024, 11, 4, 21, 27, 27, 212, DateTimeKind.Local).AddTicks(8873), "Decleration of honor in dean’s honor list for maintaining a high GPA", null },
+                    { 2, new DateOnly(2016, 1, 1), new DateTime(2024, 11, 4, 21, 27, 27, 212, DateTimeKind.Local).AddTicks(8905), "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee", null }
                 });
 
             migrationBuilder.InsertData(
@@ -293,27 +293,27 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "RoleName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 4, 11, 4, 53, 655, DateTimeKind.Local).AddTicks(283), "Admin" },
-                    { 2, new DateTime(2024, 11, 4, 11, 4, 53, 655, DateTimeKind.Local).AddTicks(320), "User" }
+                    { 1, new DateTime(2024, 11, 4, 21, 27, 27, 214, DateTimeKind.Local).AddTicks(210), "Admin" },
+                    { 2, new DateTime(2024, 11, 4, 21, 27, 27, 214, DateTimeKind.Local).AddTicks(227), "User" }
                 });
 
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "CreateDate", "Description", "Email", "Name", "Password", "Phone", "SurName", "UserName" },
-                values: new object[] { 1, new DateTime(2024, 11, 4, 11, 4, 53, 656, DateTimeKind.Local).AddTicks(1225), null, "idilerdogan@sabanciuniv.edu", "İdil", "qwe", "+90 539 371 69 85", "Erdoğan", "idilerdogan" });
+                values: new object[] { 1, new DateTime(2024, 11, 4, 21, 27, 27, 214, DateTimeKind.Local).AddTicks(5695), null, "idilerdogan@sabanciuniv.edu", "İdil", "qwe", "+90 539 371 69 85", "Erdoğan", "idilerdogan" });
 
             migrationBuilder.InsertData(
                 table: "MainMenus",
                 columns: new[] { "Id", "ActionName", "AreaName", "ClassName", "ControllerName", "CreateDate", "CssName", "IconName", "MenuName", "OrderNo", "ParentMenuId", "RoleId" },
                 values: new object[,]
                 {
-                    { 1, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3176), "", null, "About", null, null, 1 },
-                    { 2, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3188), "", null, "Education", null, null, 1 },
-                    { 3, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3191), "", null, "Work Experinces", null, null, 1 },
-                    { 4, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3193), "", null, "Projects", null, null, 1 },
-                    { 5, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3195), "", null, "Skills", null, null, 1 },
-                    { 6, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3197), "", null, "Achievement", null, null, 1 },
-                    { 7, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3199), "", null, "Activities", null, null, 1 }
+                    { 1, "Index", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6783), "", null, "About", null, null, 1 },
+                    { 2, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6788), "", null, "Education", null, null, 1 },
+                    { 3, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6790), "", null, "Work Experinces", null, null, 1 },
+                    { 4, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6792), "", null, "Projects", null, null, 1 },
+                    { 5, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6793), "", null, "Skills", null, null, 1 },
+                    { 6, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6795), "", null, "Achievement", null, null, 1 },
+                    { 7, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 21, 27, 27, 213, DateTimeKind.Local).AddTicks(6796), "", null, "Activities", null, null, 1 }
                 });
 
             migrationBuilder.CreateIndex(

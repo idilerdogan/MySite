@@ -4,7 +4,7 @@ using MySite.Entities.Entities.Concrete;
 
 namespace MySite_MVC.Models.Components
 {
-    public class AchievementViewComponent:ViewComponent
+    public class AchievementViewComponent : ViewComponent
     {
         private readonly IManager<Achievement> achievement;
 
@@ -15,8 +15,8 @@ namespace MySite_MVC.Models.Components
         public async Task<IViewComponentResult> InvokeAsync()
         {
             // Bu bolum Daha sonra degistirilecek. Gelen Kullanicinin Role'une gore veriler cekilecek
-            var menuler = achievement.GetAll();
-            return View(menuler);
+            var achievements = achievement.GetAll();
+            return View(achievements);
         }
     }
 }

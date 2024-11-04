@@ -15,11 +15,33 @@ namespace MySite_MVC.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(string page)
         {
-            return View();
-        }
 
+            switch (page)
+            {
+                case "Achievement":
+                    return PartialView("Achievement");
+                case "Activitie":
+                    return PartialView("Activitie");
+                case "Educatation":
+                    return PartialView("Educatation");
+                case "Experience":
+                    return PartialView("Experience");
+                case "Language":
+                    return PartialView("Language");
+                case "Project":
+                    return PartialView("Project");
+                case "Skill":
+                    return PartialView("Skill");
+                case "About":
+                    return PartialView("About");
+                default:
+                    return View("Index");
+            }
+
+            //return View();
+        }
         public IActionResult Privacy()
         {
             return View();
@@ -30,5 +52,40 @@ namespace MySite_MVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+        public IActionResult Activitie()
+        {
+            return View();
+        }
+        public IActionResult Achievement()
+        {
+            return View();
+        }
+        public IActionResult Education()
+        {
+            return View();
+        }
+        public IActionResult Experience()
+        {
+            return View();
+        }
+        public IActionResult Language()
+        {
+            return View();
+        }
+        public IActionResult Project()
+        {
+            return View();
+        }
+        public IActionResult Skill()
+        {
+            return View();
+        }
+
+
     }
 }

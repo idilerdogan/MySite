@@ -1,0 +1,20 @@
+﻿@model List<Education>
+
+
+<h2 class="mb-5">@nameof(Education) </h2>
+
+@foreach (var item in Model.OrderByDescending(p => p.Id))
+{
+
+
+    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+        <div class="flex-grow-1">
+            <h3 class="mb-0">@item.ScName</h3>
+            <div class="subheading mb-3">@item.Description</div>
+            
+            <p>GPA: @item.Degree</p>
+        </div>
+        <div class="flex-shrink-0"><span class="text-primary">@item.ScBeginning.Year - @item.ScEndning.Year</span></div>
+    </div>
+
+}

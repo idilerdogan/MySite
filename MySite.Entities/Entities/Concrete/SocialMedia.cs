@@ -6,6 +6,6 @@ namespace MySite.Entities.Entities.Concrete
     {
         public string Name { get; set; }
         public string Medialink { get; set; }
-        public string Icon { get; set; }
+        public string? Icon { get; set; }
     }
 }

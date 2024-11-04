@@ -21,8 +21,8 @@ namespace MySite.Entities.EntityConfig.Concrete
                 Id = 1,
                 MenuName = "About",
                 ControllerName = "Home",
-                ActionName = "Index",
-               // AreaName = "Admin",
+                ActionName = "About",
+                // AreaName = "Admin",
                 ClassName = "far fa-circle nav-icon",
                 CreateDate = DateTime.Now,
                 CssName = "",
@@ -33,9 +33,9 @@ namespace MySite.Entities.EntityConfig.Concrete
              {
                  Id = 2,
                  MenuName = "Education",
-                 ControllerName = "Account",
-                 ActionName = "Index",
-                // AreaName = "Admin",
+                 ControllerName = "Home",
+                 ActionName = "Education",
+                 // AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
                  CssName = "",
@@ -45,10 +45,10 @@ namespace MySite.Entities.EntityConfig.Concrete
            new MainMenu
            {
                Id = 3,
-               MenuName = "Work Experinces",
-               ControllerName = "Account",
-               ActionName = "Index",
-              // AreaName = "User",
+               MenuName = "Experience",
+               ControllerName = "Home",
+               ActionName = "Experience",
+               // AreaName = "User",
                ClassName = "far fa-circle nav-icon",
                CreateDate = DateTime.Now,
                CssName = "",
@@ -59,8 +59,8 @@ namespace MySite.Entities.EntityConfig.Concrete
              {
                  Id = 4,
                  MenuName = "Projects",
-                 ControllerName = "Account",
-                 ActionName = "Index",
+                 ControllerName = "Home",
+                 ActionName = "Project",
                  //AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
@@ -72,9 +72,9 @@ namespace MySite.Entities.EntityConfig.Concrete
              {
                  Id = 5,
                  MenuName = "Skills",
-                 ControllerName = "Account",
-                 ActionName = "Index",
-                // AreaName = "Admin",
+                 ControllerName = "Home",
+                 ActionName = "Skill",
+                 // AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
                  CssName = "",
@@ -84,10 +84,10 @@ namespace MySite.Entities.EntityConfig.Concrete
              new MainMenu
              {
                  Id = 6,
-                 MenuName = "Achievement",
-                 ControllerName = "Account",
-                 ActionName = "Index",
-                // AreaName = "Admin",
+                 MenuName = "Achievements",
+                 ControllerName = "Home",
+                 ActionName = "Achievement",
+                 // AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
                  CssName = "",
@@ -98,15 +98,28 @@ namespace MySite.Entities.EntityConfig.Concrete
              {
                  Id = 7,
                  MenuName = "Activities",
-                 ControllerName = "Account",
-                 ActionName = "Index",
+                 ControllerName = "Home",
+                 ActionName = "Activitie",
                  //AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
                  CssName = "",
                  RoleId = 1
 
-             });
+             },
+              new MainMenu
+              {
+                  Id = 8,
+                  MenuName = "Languages",
+                  ControllerName = "Home",
+                  ActionName = "Language",
+                  // AreaName = "Admin",
+                  ClassName = "far fa-circle nav-icon",
+                  CreateDate = DateTime.Now,
+                  CssName = "",
+                  RoleId = 1
+
+              });
         }
     }
 }

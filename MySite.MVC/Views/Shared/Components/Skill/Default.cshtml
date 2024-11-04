@@ -1,0 +1,19 @@
+﻿@model List<Skill>
+
+
+<h2 class="mb-5">@nameof(Skill) </h2>
+
+@foreach (var item in Model.OrderBy(p => p.Id))
+{
+
+
+        <a class="nav-link js-scroll-trigger">
+
+            <div class="subheading mb-3">
+            @item.ComputerSkills
+            </div>
+            
+        </a>
+
+
+}
