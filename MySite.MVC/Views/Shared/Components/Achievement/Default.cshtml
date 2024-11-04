@@ -1,11 +1,20 @@
 ﻿@model List<Achievement>
 
 
+<h2 class="mb-5">@Model.GetType().GenericTypeArguments </h2>
+
     @foreach (var item in Model.OrderBy(p => p.Id))
     {
-        <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" asp-controller="@item.Description" asp-
-               action="@item.AcDate.Year">@item.AcDate.Year @item.Description </a>
-        </li>
+
+
+            <a class="nav-link js-scroll-trigger">
+                <div class="subheading mb-3"> 
+                    @item.Description
+                </div>
+                <div class="flex-shrink-0">
+                     @item.AcDate.Year
+                <div/> 
+            </a>
+
 
     }
