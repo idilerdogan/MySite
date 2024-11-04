@@ -19,6 +19,8 @@ namespace MySite.Entities.EntityConfig.Concrete
             builder.Property(p => p.UserName).HasMaxLength(500);
             builder.HasIndex(p => p.Email).IsUnique();
             builder.HasIndex(p => p.UserName).IsUnique();
+
+            builder.HasData((new User() { Id = 1, CreateDate = DateTime.Now, Name = "İdil", SurName = "Erdoğan", Password = "qwe", UserName = "idilerdogan", Email="idilerdogan@sabanciuniv.edu", Phone="+90 539 371 69 85", }));
         }
     }
 }

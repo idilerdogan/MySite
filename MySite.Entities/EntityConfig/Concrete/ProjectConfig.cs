@@ -10,7 +10,7 @@ namespace MySite.Entities.EntityConfig.Concrete
         {
             base.Configure(builder);
             builder.Property(p => p.Title).HasMaxLength(50);
-            builder.Property(p => p.Description).HasMaxLength(200);
+            builder.Property(p => p.Description).HasMaxLength(2000);
         }
     }
 }

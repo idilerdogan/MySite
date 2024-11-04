@@ -1,0 +1,11 @@
+﻿@model List<Achievement>
+
+
+    @foreach (var item in Model.OrderBy(p => p.Id))
+    {
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" asp-controller="@item.Description" asp-
+               action="@item.AcDate.Year">@item.AcDate.Year @item.Description </a>
+        </li>
+
+    }

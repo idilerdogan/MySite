@@ -92,12 +92,15 @@ namespace MySite.MVC.Controllers
 
 
         }
-
+        [HttpGet]
+        [AllowAnonymous]
         public async Task<IActionResult> Logout()
         {
             await HttpContext.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
+        [HttpGet]
+        [AllowAnonymous]
         public IActionResult UserInsert()
         {
 
@@ -105,6 +108,7 @@ namespace MySite.MVC.Controllers
             return View(userInsertVM);
         }
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult UserInsert(UserInsertVM insertVM)
         {
 

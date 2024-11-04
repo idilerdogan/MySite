@@ -37,7 +37,7 @@ namespace MySite.Entities.Migrations
                     SurName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     Phone = table.Column<string>(type: "nvarchar(19)", maxLength: 19, nullable: false),
                     Email = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: true),
                     Password = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -62,7 +62,7 @@ namespace MySite.Entities.Migrations
                     IconName = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     OrderNo = table.Column<int>(type: "int", nullable: true),
                     ParentMenuId = table.Column<int>(type: "int", nullable: true),
-                    RolesId = table.Column<int>(type: "int", nullable: true),
+                    RoleId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
@@ -74,8 +74,8 @@ namespace MySite.Entities.Migrations
                         principalTable: "MainMenus",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_MainMenus_Roles_RolesId",
-                        column: x => x.RolesId,
+                        name: "FK_MainMenus_Roles_RoleId",
+                        column: x => x.RoleId,
                         principalTable: "Roles",
                         principalColumn: "Id");
                 });
@@ -87,7 +87,7 @@ namespace MySite.Entities.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     AcDate = table.Column<DateOnly>(type: "date", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -109,7 +109,7 @@ namespace MySite.Entities.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Date = table.Column<DateOnly>(type: "date", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -132,7 +132,7 @@ namespace MySite.Entities.Migrations
                     ScName = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     ScBeginning = table.Column<DateOnly>(type: "date", nullable: false),
                     ScEndning = table.Column<DateOnly>(type: "date", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Description = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: true),
                     Degree = table.Column<string>(type: "nvarchar(5)", maxLength: 5, nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
@@ -157,7 +157,7 @@ namespace MySite.Entities.Migrations
                     ExTitle = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
                     ExBeginning = table.Column<DateOnly>(type: "date", nullable: false),
                     ExEnding = table.Column<DateOnly>(type: "date", nullable: false),
-                    ExDescription = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
+                    ExDescription = table.Column<string>(type: "nvarchar(1000)", maxLength: 1000, nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -199,7 +199,7 @@ namespace MySite.Entities.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Date = table.Column<DateOnly>(type: "date", nullable: false),
                     Title = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(2000)", maxLength: 2000, nullable: false),
                     UserId = table.Column<int>(type: "int", nullable: true),
                     CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
@@ -280,13 +280,40 @@ namespace MySite.Entities.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "MainMenus",
-                columns: new[] { "Id", "ActionName", "AreaName", "ClassName", "ControllerName", "CreateDate", "CssName", "IconName", "MenuName", "OrderNo", "ParentMenuId", "RolesId" },
+                table: "Achievements",
+                columns: new[] { "Id", "AcDate", "CreateDate", "Description", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "Index", "Admin", "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4505), "", null, "Home", null, null, null },
-                    { 2, "Sign In", "User", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4516), "", null, "Home", null, null, null },
-                    { 3, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 3, 22, 32, 41, 681, DateTimeKind.Local).AddTicks(4518), "", null, "User", null, null, null }
+                    { 1, new DateOnly(2020, 2, 1), new DateTime(2024, 11, 4, 11, 4, 53, 652, DateTimeKind.Local).AddTicks(5557), "Decleration of honor in dean’s honor list for maintaining a high GPA", null },
+                    { 2, new DateOnly(2016, 1, 1), new DateTime(2024, 11, 4, 11, 4, 53, 652, DateTimeKind.Local).AddTicks(5603), "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee", null }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Roles",
+                columns: new[] { "Id", "CreateDate", "RoleName" },
+                values: new object[,]
+                {
+                    { 1, new DateTime(2024, 11, 4, 11, 4, 53, 655, DateTimeKind.Local).AddTicks(283), "Admin" },
+                    { 2, new DateTime(2024, 11, 4, 11, 4, 53, 655, DateTimeKind.Local).AddTicks(320), "User" }
+                });
+
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "Id", "CreateDate", "Description", "Email", "Name", "Password", "Phone", "SurName", "UserName" },
+                values: new object[] { 1, new DateTime(2024, 11, 4, 11, 4, 53, 656, DateTimeKind.Local).AddTicks(1225), null, "idilerdogan@sabanciuniv.edu", "İdil", "qwe", "+90 539 371 69 85", "Erdoğan", "idilerdogan" });
+
+            migrationBuilder.InsertData(
+                table: "MainMenus",
+                columns: new[] { "Id", "ActionName", "AreaName", "ClassName", "ControllerName", "CreateDate", "CssName", "IconName", "MenuName", "OrderNo", "ParentMenuId", "RoleId" },
+                values: new object[,]
+                {
+                    { 1, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3176), "", null, "About", null, null, 1 },
+                    { 2, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3188), "", null, "Education", null, null, 1 },
+                    { 3, "Index", null, "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3191), "", null, "Work Experinces", null, null, 1 },
+                    { 4, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3193), "", null, "Projects", null, null, 1 },
+                    { 5, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3195), "", null, "Skills", null, null, 1 },
+                    { 6, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3197), "", null, "Achievement", null, null, 1 },
+                    { 7, "Index", "Admin", "far fa-circle nav-icon", "Account", new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3199), "", null, "Activities", null, null, 1 }
                 });
 
             migrationBuilder.CreateIndex(
@@ -350,9 +377,9 @@ namespace MySite.Entities.Migrations
                 column: "ParentMenuId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_MainMenus_RolesId",
+                name: "IX_MainMenus_RoleId",
                 table: "MainMenus",
-                column: "RolesId");
+                column: "RoleId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Projects_Id",

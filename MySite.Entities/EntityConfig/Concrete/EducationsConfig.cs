@@ -9,7 +9,7 @@ namespace MySite.Entities.EntityConfig.Concrete
         public override void Configure(EntityTypeBuilder<Education> builder)
         {
             base.Configure(builder);
-            builder.Property(p => p.Description).HasMaxLength(100);
+            builder.Property(p => p.Description).HasMaxLength(1000);
             builder.Property(p => p.ScName).HasMaxLength(50);
             builder.Property(p => p.Degree).HasMaxLength(5);
         }

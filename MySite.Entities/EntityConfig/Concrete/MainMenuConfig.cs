@@ -19,42 +19,94 @@ namespace MySite.Entities.EntityConfig.Concrete
             builder.HasData(new MainMenu
             {
                 Id = 1,
-                MenuName = "Home",
+                MenuName = "About",
                 ControllerName = "Home",
                 ActionName = "Index",
-                AreaName = "Admin",
+               // AreaName = "Admin",
                 ClassName = "far fa-circle nav-icon",
                 CreateDate = DateTime.Now,
                 CssName = "",
                 RoleId = 1
 
             },
+             new MainMenu
+             {
+                 Id = 2,
+                 MenuName = "Education",
+                 ControllerName = "Account",
+                 ActionName = "Index",
+                // AreaName = "Admin",
+                 ClassName = "far fa-circle nav-icon",
+                 CreateDate = DateTime.Now,
+                 CssName = "",
+                 RoleId = 1
+
+             },
            new MainMenu
            {
-               Id = 2,
-               MenuName = "Home",
+               Id = 3,
+               MenuName = "Work Experinces",
                ControllerName = "Account",
-               ActionName = "Sign In",
-               AreaName = "User",
+               ActionName = "Index",
+              // AreaName = "User",
                ClassName = "far fa-circle nav-icon",
                CreateDate = DateTime.Now,
                CssName = "",
                RoleId = 1
 
            },
-            new MainMenu
-            {
-                Id = 3,
-                MenuName = "User",
-                ControllerName = "Account",
-                ActionName = "Index",
-                AreaName = "Admin",
-                ClassName = "far fa-circle nav-icon",
-                CreateDate = DateTime.Now,
-                CssName = "",
-                RoleId = 1
+             new MainMenu
+             {
+                 Id = 4,
+                 MenuName = "Projects",
+                 ControllerName = "Account",
+                 ActionName = "Index",
+                 //AreaName = "Admin",
+                 ClassName = "far fa-circle nav-icon",
+                 CreateDate = DateTime.Now,
+                 CssName = "",
+                 RoleId = 1
 
-            });
+             },
+             new MainMenu
+             {
+                 Id = 5,
+                 MenuName = "Skills",
+                 ControllerName = "Account",
+                 ActionName = "Index",
+                // AreaName = "Admin",
+                 ClassName = "far fa-circle nav-icon",
+                 CreateDate = DateTime.Now,
+                 CssName = "",
+                 RoleId = 1
+
+             },
+             new MainMenu
+             {
+                 Id = 6,
+                 MenuName = "Achievement",
+                 ControllerName = "Account",
+                 ActionName = "Index",
+                // AreaName = "Admin",
+                 ClassName = "far fa-circle nav-icon",
+                 CreateDate = DateTime.Now,
+                 CssName = "",
+                 RoleId = 1
+
+             },
+             new MainMenu
+             {
+                 Id = 7,
+                 MenuName = "Activities",
+                 ControllerName = "Account",
+                 ActionName = "Index",
+                 //AreaName = "Admin",
+                 ClassName = "far fa-circle nav-icon",
+                 CreateDate = DateTime.Now,
+                 CssName = "",
+                 RoleId = 1
+
+             });
         }
     }
 }

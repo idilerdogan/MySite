@@ -2,20 +2,20 @@
 using MySite.BL.Abstract;
 using MySite.Entities.Entities.Concrete;
 
-namespace MySite_MVC.Models.Component
+namespace MySite_MVC.Models.Components
 {
-    public class MenuViewComponent : ViewComponent
+    public class AchievementViewComponent:ViewComponent
     {
-        private readonly IManager<MainMenu> menuManager;
+        private readonly IManager<Achievement> achievement;
 
-        public MenuViewComponent(IManager<MainMenu> menuManager)
+        public AchievementViewComponent(IManager<Achievement> achievement)
         {
-            this.menuManager = menuManager;
+            this.achievement = achievement;
         }
         public async Task<IViewComponentResult> InvokeAsync()
         {
             // Bu bolum Daha sonra degistirilecek. Gelen Kullanicinin Role'une gore veriler cekilecek
-            var menuler = menuManager.GetAll();
+            var menuler = achievement.GetAll();
             return View(menuler);
         }
     }

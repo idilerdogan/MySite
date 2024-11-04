@@ -1,0 +1,12 @@
+﻿
+@model List<MainMenu>
+
+<ul class="navbar-nav">
+
+    @foreach(var mainmenu in Model.OrderBy(p=>p.OrderNo))    
+    {
+        <li class="nav-item"><a class="nav-link js-scroll-trigger" asp-controller="@mainmenu.ControllerName" asp-
+            action="@mainmenu.ActionName">@mainmenu.MenuName</a></li>
+
+    }
+</ul>

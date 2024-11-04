@@ -38,8 +38,8 @@ namespace MySite.Entities.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<int?>("UserId")
                         .HasColumnType("int");
@@ -51,6 +51,22 @@ namespace MySite.Entities.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Achievements");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AcDate = new DateOnly(2020, 2, 1),
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 652, DateTimeKind.Local).AddTicks(5557),
+                            Description = "Decleration of honor in dean’s honor list for maintaining a high GPA"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AcDate = new DateOnly(2016, 1, 1),
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 652, DateTimeKind.Local).AddTicks(5603),
+                            Description = "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee"
+                        });
                 });
 
             modelBuilder.Entity("MySite.Entities.Entities.Concrete.Activitie", b =>
@@ -69,8 +85,8 @@ namespace MySite.Entities.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -106,8 +122,8 @@ namespace MySite.Entities.Migrations
                         .HasColumnType("nvarchar(5)");
 
                     b.Property<string>("Description")
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<DateOnly>("ScBeginning")
                         .HasColumnType("date");
@@ -148,8 +164,8 @@ namespace MySite.Entities.Migrations
 
                     b.Property<string>("ExDescription")
                         .IsRequired()
-                        .HasMaxLength(100)
-                        .HasColumnType("nvarchar(100)");
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
 
                     b.Property<DateOnly>("ExEnding")
                         .HasColumnType("date");
@@ -267,36 +283,82 @@ namespace MySite.Entities.Migrations
                         {
                             Id = 1,
                             ActionName = "Index",
-                            AreaName = "Admin",
                             ClassName = "far fa-circle nav-icon",
-                            ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 3, 22, 35, 51, 50, DateTimeKind.Local).AddTicks(1855),
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3176),
                             CssName = "",
-                            MenuName = "Home",
+                            MenuName = "About",
                             RoleId = 1
                         },
                         new
                         {
                             Id = 2,
-                            ActionName = "Sign In",
-                            AreaName = "User",
+                            ActionName = "Index",
+                            AreaName = "Admin",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Account",
-                            CreateDate = new DateTime(2024, 11, 3, 22, 35, 51, 50, DateTimeKind.Local).AddTicks(1868),
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3188),
                             CssName = "",
-                            MenuName = "Home",
+                            MenuName = "Education",
                             RoleId = 1
                         },
                         new
                         {
                             Id = 3,
                             ActionName = "Index",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3191),
+                            CssName = "",
+                            MenuName = "Work Experinces",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ActionName = "Index",
                             AreaName = "Admin",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Account",
-                            CreateDate = new DateTime(2024, 11, 3, 22, 35, 51, 50, DateTimeKind.Local).AddTicks(1869),
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3193),
                             CssName = "",
-                            MenuName = "User",
+                            MenuName = "Projects",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 5,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3195),
+                            CssName = "",
+                            MenuName = "Skills",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 6,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3197),
+                            CssName = "",
+                            MenuName = "Achievement",
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            Id = 7,
+                            ActionName = "Index",
+                            AreaName = "Admin",
+                            ClassName = "far fa-circle nav-icon",
+                            ControllerName = "Account",
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 654, DateTimeKind.Local).AddTicks(3199),
+                            CssName = "",
+                            MenuName = "Activities",
                             RoleId = 1
                         });
                 });
@@ -317,8 +379,8 @@ namespace MySite.Entities.Migrations
 
                     b.Property<string>("Description")
                         .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
+                        .HasMaxLength(2000)
+                        .HasColumnType("nvarchar(2000)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -361,6 +423,20 @@ namespace MySite.Entities.Migrations
                         .IsUnique();
 
                     b.ToTable("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 655, DateTimeKind.Local).AddTicks(283),
+                            RoleName = "Admin"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 655, DateTimeKind.Local).AddTicks(320),
+                            RoleName = "User"
+                        });
                 });
 
             modelBuilder.Entity("MySite.Entities.Entities.Concrete.Skill", b =>
@@ -439,7 +515,6 @@ namespace MySite.Entities.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -484,6 +559,19 @@ namespace MySite.Entities.Migrations
                         .IsUnique();
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreateDate = new DateTime(2024, 11, 4, 11, 4, 53, 656, DateTimeKind.Local).AddTicks(1225),
+                            Email = "idilerdogan@sabanciuniv.edu",
+                            Name = "İdil",
+                            Password = "qwe",
+                            Phone = "+90 539 371 69 85",
+                            SurName = "Erdoğan",
+                            UserName = "idilerdogan"
+                        });
                 });
 
             modelBuilder.Entity("RoleUser", b =>
