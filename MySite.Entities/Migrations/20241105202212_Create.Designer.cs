@@ -12,7 +12,7 @@ using MySite.Entities.DbContexts;
 namespace MySite.Entities.Migrations
 {
     [DbContext(typeof(SqlDbContext))]
-    [Migration("20241105074646_Create")]
+    [Migration("20241105202212_Create")]
     partial class Create
     {
         /// <inheritdoc />
@@ -60,49 +60,49 @@ namespace MySite.Entities.Migrations
                         {
                             Id = 7,
                             AcDate = new DateOnly(2020, 2, 1),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5378),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(767),
                             Description = "Decleration of honor in dean’s honor list for maintaining a high GPA"
                         },
                         new
                         {
                             Id = 6,
                             AcDate = new DateOnly(2016, 1, 1),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5422),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(802),
                             Description = "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee"
                         },
                         new
                         {
                             Id = 5,
                             AcDate = new DateOnly(2017, 2, 1),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5427),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(807),
                             Description = "Decleration of honor in dean’s honor list for maintaining a high GPA"
                         },
                         new
                         {
                             Id = 4,
                             AcDate = new DateOnly(2016, 9, 1),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5431),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(810),
                             Description = "Decleration of high honor in dean’s honor list for maintaining a high GPA"
                         },
                         new
                         {
                             Id = 3,
                             AcDate = new DateOnly(2015, 1, 17),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5435),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(814),
                             Description = "Turkish Championship Bilecik Youth Group First Place (Türkiye Şampiyonası Bilecik Basketbol Gençler Grup Birinci) with Karşıyaka Anatolian High School Basketball Team"
                         },
                         new
                         {
                             Id = 2,
                             AcDate = new DateOnly(2015, 2, 1),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5442),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(820),
                             Description = "2014 - 2015 Basketball Young Girls Province Cup Third Place (2014 - 2015 Basketbol Genç Kızlar İl (İzmir) Kupası) with Karşıyaka Anatolian High school Basketball Team"
                         },
                         new
                         {
                             Id = 1,
                             AcDate = new DateOnly(2013, 2, 1),
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(5446),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(824),
                             Description = "Basketball Distict Cup First Place (Basketbol İlçe Kaymakamlik Kupası) with Karşıyaka Anatolian High school Basketball Team"
                         });
                 });
@@ -149,7 +149,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(8246),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(2756),
                             DateBegining = new DateOnly(2015, 9, 1),
                             DateEnding = new DateOnly(2021, 9, 1),
                             Description = "Member, director and actress",
@@ -158,7 +158,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(8269),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(2774),
                             DateBegining = new DateOnly(2017, 9, 1),
                             DateEnding = new DateOnly(2018, 9, 1),
                             Description = "Co- President",
@@ -167,7 +167,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(8274),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(2779),
                             DateBegining = new DateOnly(2015, 9, 1),
                             DateEnding = new DateOnly(2018, 9, 1),
                             Description = "Member, media coordinator and media, concert, sponsorship contractor",
@@ -176,7 +176,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(8278),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(2783),
                             DateBegining = new DateOnly(2017, 9, 1),
                             DateEnding = new DateOnly(2018, 9, 1),
                             Description = "Organizing a nation-wide theatre festival",
@@ -185,7 +185,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 329, DateTimeKind.Local).AddTicks(8283),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(2787),
                             DateBegining = new DateOnly(2015, 9, 1),
                             DateEnding = new DateOnly(2016, 5, 1),
                             Description = "Member",
@@ -239,7 +239,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(903),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(4746),
                             Degree = "2,91",
                             Description = "BSC Mechatronics Engineering",
                             ScBeginning = new DateOnly(2015, 9, 1),
@@ -249,7 +249,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(928),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(4765),
                             Degree = "89.90",
                             Description = "",
                             ScBeginning = new DateOnly(2010, 9, 1),
@@ -305,7 +305,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(3663),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(6570),
                             ExBeginning = new DateOnly(2019, 7, 1),
                             ExDescription = "Assembled and adapted PLC to old German Ring Twisted Machines",
                             ExEnding = new DateOnly(2019, 8, 31),
@@ -315,7 +315,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(3689),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(6590),
                             ExBeginning = new DateOnly(2018, 6, 1),
                             ExDescription = "Provided introductory campus tour for visitors. Gave additional information though phone calls and the information stand",
                             ExEnding = new DateOnly(2019, 3, 31),
@@ -325,7 +325,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(3694),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(6595),
                             ExBeginning = new DateOnly(2017, 7, 1),
                             ExDescription = "Planned drama class curriculum Conducted drama and acting class for in the scope of Highschool Summer School",
                             ExEnding = new DateOnly(2017, 8, 31),
@@ -335,7 +335,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(3699),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(6598),
                             ExBeginning = new DateOnly(2018, 7, 1),
                             ExDescription = "Planned drama class curriculum Conducted drama and acting class for in the scope of Highschool Summer School",
                             ExEnding = new DateOnly(2018, 8, 31),
@@ -345,7 +345,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(3703),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(6604),
                             ExBeginning = new DateOnly(2015, 6, 1),
                             ExDescription = "Attended meetings with the manager of the center Provided correlation in mailing system",
                             ExEnding = new DateOnly(2016, 8, 31),
@@ -355,7 +355,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(3710),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(6610),
                             ExBeginning = new DateOnly(2011, 6, 1),
                             ExDescription = "Kept record of the balance sheet by using Excel efficiently Provided report of the profit and loss account statement",
                             ExEnding = new DateOnly(2011, 8, 31),
@@ -395,19 +395,19 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(6001),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(8347),
                             Languages = "Turkish Mother Language"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(6021),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(8363),
                             Languages = "English Upper Intermediate"
                         },
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(6024),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 312, DateTimeKind.Local).AddTicks(8367),
                             Languages = "Germany Elemantary"
                         });
                 });
@@ -477,7 +477,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "About",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9121),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(305),
                             CssName = "#about",
                             MenuName = "About",
                             RoleId = 1
@@ -488,7 +488,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "Education",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9127),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(311),
                             CssName = "#education",
                             MenuName = "Education",
                             RoleId = 1
@@ -499,7 +499,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "Experience",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9129),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(313),
                             CssName = "#experience",
                             MenuName = "Experience",
                             RoleId = 1
@@ -510,7 +510,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "Project",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9131),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(314),
                             CssName = "#project",
                             MenuName = "Projects",
                             RoleId = 1
@@ -521,7 +521,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "Skill",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9145),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(316),
                             CssName = "#skill",
                             MenuName = "Skills",
                             RoleId = 1
@@ -532,7 +532,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "Achievement",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9147),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(318),
                             CssName = "#achievement",
                             MenuName = "Achievements",
                             RoleId = 1
@@ -543,8 +543,8 @@ namespace MySite.Entities.Migrations
                             ActionName = "Activitie",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9149),
-                            CssName = "",
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(319),
+                            CssName = "#activitie",
                             MenuName = "Activities",
                             RoleId = 1
                         },
@@ -554,7 +554,7 @@ namespace MySite.Entities.Migrations
                             ActionName = "Language",
                             ClassName = "far fa-circle nav-icon",
                             ControllerName = "Home",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 330, DateTimeKind.Local).AddTicks(9151),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(321),
                             CssName = "#language",
                             MenuName = "Languages",
                             RoleId = 1
@@ -600,7 +600,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 8,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(1986),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2222),
                             Date = new DateOnly(2021, 9, 1),
                             Description = "Designed a lower-limb exoskeleton and improved the prototypes for the walk and rehabilitation of the paraplegic people. Joined the Biotechnology Innovation Competition with this project in Teknofest 2021",
                             Title = "Lower-Limb Exoskeleton with EEG/Team EXONIX"
@@ -608,7 +608,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 7,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2010),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2240),
                             Date = new DateOnly(2021, 2, 4),
                             Description = "Designed and simulated a wheeled robot system of 2 DOF using MATLAB Simulink & Solidworks that moves and recognizes the obstacle",
                             Title = "Bilateral Steering for a Mobile Robot"
@@ -616,7 +616,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 6,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2015),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2245),
                             Date = new DateOnly(2020, 6, 1),
                             Description = "Simulated and analyzed energy harvesting of piezoelectric sensor using MATLAB Simulink",
                             Title = "Piezoelectric Energy Harvesters"
@@ -624,7 +624,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 5,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2019),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2249),
                             Date = new DateOnly(2020, 6, 1),
                             Description = "Simulated desired design using MATLAB Simulink, researched bio-mechatronic market extensively, designed a system using Solidworks",
                             Title = "Designing a Portable Arm Injection System"
@@ -632,7 +632,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 4,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2024),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2253),
                             Date = new DateOnly(2019, 12, 30),
                             Description = "Designing a system containing, wiring and coding given as a class project using Siemens Simatic, BECKHOFF Twincat and PLC",
                             Title = "Production Line Design with PLC"
@@ -640,7 +640,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 3,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2032),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2258),
                             Date = new DateOnly(2018, 12, 30),
                             Description = "Provided comprehensive 3D construction of a bicycle in Solidworks including dynamic parts",
                             Title = "Implementing Bicycle in to Solidworks"
@@ -648,7 +648,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2037),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2262),
                             Date = new DateOnly(2016, 12, 30),
                             Description = "Provided market analysis by conducting polls for several products By analyzing polls defined the relationship between consumption choice and Evolutionary Roots",
                             Title = "Researching Evolutionary Roots of Consumption"
@@ -656,7 +656,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(2041),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(2266),
                             Date = new DateOnly(2015, 12, 30),
                             Description = "Voluntarily contributed to the social improvements of elementary school students in Istanbul",
                             Title = "Civic Involvement Project"
@@ -692,13 +692,13 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(4995),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(4313),
                             RoleName = "Admin"
                         },
                         new
                         {
                             Id = 2,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(5019),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(4332),
                             RoleName = "User"
                         });
                 });
@@ -735,79 +735,79 @@ namespace MySite.Entities.Migrations
                         {
                             Id = 1,
                             ComputerSkills = "Microsoft Office Tools: Word, Excel, PowerPoint",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7452)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6016)
                         },
                         new
                         {
                             Id = 2,
                             ComputerSkills = "PLC",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7485)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6033)
                         },
                         new
                         {
                             Id = 3,
                             ComputerSkills = "Arduino",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7489)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6037)
                         },
                         new
                         {
                             Id = 4,
                             ComputerSkills = "MATLAB",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7492)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6041)
                         },
                         new
                         {
                             Id = 5,
                             ComputerSkills = "Solidworks",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7496)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6044)
                         },
                         new
                         {
                             Id = 6,
                             ComputerSkills = "COMSOL",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7501)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6049)
                         },
                         new
                         {
                             Id = 7,
                             ComputerSkills = "Xilinx",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7505)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6052)
                         },
                         new
                         {
                             Id = 8,
                             ComputerSkills = "Solidworks",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7508)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6055)
                         },
                         new
                         {
                             Id = 9,
                             ComputerSkills = "Microsoft Visual Studio, Microsoft Visual Codes, C#",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7512)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6058)
                         },
                         new
                         {
                             Id = 10,
                             ComputerSkills = "SQL, PostgreSQL, SQLite",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7517)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6062)
                         },
                         new
                         {
                             Id = 11,
                             ComputerSkills = "\r\nObject-Oriented Programming (OOP)",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7521)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6065)
                         },
                         new
                         {
                             Id = 12,
                             ComputerSkills = "\r\nEntity Framework (EF) Core",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7524)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6069)
                         },
                         new
                         {
                             Id = 13,
                             ComputerSkills = "\r\nHTML, CSS",
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(7528)
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(6072)
                         });
                 });
 
@@ -849,7 +849,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 331, DateTimeKind.Local).AddTicks(9831),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 313, DateTimeKind.Local).AddTicks(7818),
                             Medialink = "\r\nhttps://www.linkedin.com/in/idil-erdoğan-725458159/",
                             Name = "LinkedIn"
                         });
@@ -916,7 +916,7 @@ namespace MySite.Entities.Migrations
                         new
                         {
                             Id = 1,
-                            CreateDate = new DateTime(2024, 11, 5, 10, 46, 46, 332, DateTimeKind.Local).AddTicks(4185),
+                            CreateDate = new DateTime(2024, 11, 5, 23, 22, 12, 314, DateTimeKind.Local).AddTicks(590),
                             Description = "",
                             Email = "idilerdogan@sabanciuniv.edu",
                             Name = "İdil",

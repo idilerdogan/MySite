@@ -151,5 +151,12 @@ namespace MySite.MVC.Controllers
             return RedirectToAction("Index", "Account", new { Area = "Admin" });
 
         }
+        [HttpGet]
+        [AllowAnonymous]
+        public IActionResult UserRegisterSuccess()
+        {
+
+            return View();
+        }
     }
 }
