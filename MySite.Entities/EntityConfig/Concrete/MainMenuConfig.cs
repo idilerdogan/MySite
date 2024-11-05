@@ -25,7 +25,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                 // AreaName = "Admin",
                 ClassName = "far fa-circle nav-icon",
                 CreateDate = DateTime.Now,
-                CssName = "",
+                CssName = "#about",
                 RoleId = 1
 
             },
@@ -38,7 +38,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                  // AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
-                 CssName = "",
+                 CssName = "#education",
                  RoleId = 1
 
              },
@@ -51,7 +51,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                // AreaName = "User",
                ClassName = "far fa-circle nav-icon",
                CreateDate = DateTime.Now,
-               CssName = "",
+               CssName = "#experience",
                RoleId = 1
 
            },
@@ -64,7 +64,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                  //AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
-                 CssName = "",
+                 CssName = "#project",
                  RoleId = 1
 
              },
@@ -77,7 +77,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                  // AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
-                 CssName = "",
+                 CssName = "#skill",
                  RoleId = 1
 
              },
@@ -90,7 +90,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                  // AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
-                 CssName = "",
+                 CssName = "#achievement",
                  RoleId = 1
 
              },
@@ -103,7 +103,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                  //AreaName = "Admin",
                  ClassName = "far fa-circle nav-icon",
                  CreateDate = DateTime.Now,
-                 CssName = "",
+                 CssName = "#activitie",
                  RoleId = 1
 
              },
@@ -116,7 +116,7 @@ namespace MySite.Entities.EntityConfig.Concrete
                   // AreaName = "Admin",
                   ClassName = "far fa-circle nav-icon",
                   CreateDate = DateTime.Now,
-                  CssName = "",
+                  CssName = "#language",
                   RoleId = 1
 
               });
