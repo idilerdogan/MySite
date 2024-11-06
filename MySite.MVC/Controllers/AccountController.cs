@@ -117,7 +117,9 @@ namespace MySite.MVC.Controllers
 
                 notyfService.Error("Düzeltilmesi gereken yerler var");
                 return View(insertVM);
+
             }
+          
             // Burada insertvm MyUser sinifina çevrilmesi lazim
 
             #region Amele Yontemi
@@ -148,7 +150,7 @@ namespace MySite.MVC.Controllers
 
             // userManager.Create(insertVM);
 
-            return RedirectToAction("Index", "Account", new { Area = "Admin" });
+            return RedirectToAction("UserRegisterSuccess", "Account");
 
         }
         [HttpGet]

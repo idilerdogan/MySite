@@ -46,7 +46,7 @@ namespace MySite_MVC.Models.VMs
         [DataType(DataType.Password)]
         public string RePassword { get; set; }
 
-        public IFormFile Picture { get; set; }
+        public IFormFile? Picture { get; set; }
 
         public List<CheckBoxVM> Roller { get; set; } = new List<CheckBoxVM>();
     }
