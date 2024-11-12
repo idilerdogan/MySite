@@ -108,12 +108,6 @@ namespace MySite_MVC.Areas.Admin.Controllers
 
                 userManager.Update(myUser);
             }
-            catch (SqlException sqlException)
-            {
-
-                notyfService.Error("Hata Olustu :" + sqlException.InnerException);
-                return View(insertVM);
-            }
             catch (Exception ex)
             {
                 var message = ex.InnerException.Message.Split(".")[2];

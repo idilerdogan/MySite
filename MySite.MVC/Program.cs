@@ -19,7 +19,7 @@ namespace MySite_MVC
 
             //DbContext Registiration
             var conn = builder.Configuration.GetConnectionString("MySite");
-            builder.Services.AddDbContext<SqlDbContext>(options => options.UseSqlServer(conn));
+            builder.Services.AddDbContext<MySQLDbContext>(options => options.UseMySQL(conn));
 
             builder.Services.AddAutoMapper(p => p.AddProfile<AutoMapperProfile>());
 

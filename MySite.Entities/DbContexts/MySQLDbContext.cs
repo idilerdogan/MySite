@@ -4,7 +4,7 @@ using MySite.Entities.Entities.Concrete;
 
 namespace MySite.Entities.DbContexts
 {
-    public class SqlDbContext : DbContext
+    public class MySQLDbContext : DbContext
     {
 
         public DbSet<Achievement> Achievements { get; set; }
@@ -22,19 +22,19 @@ namespace MySite.Entities.DbContexts
         public DbSet<MainMenu> MainMenus { get; set; }
 
 
-        public SqlDbContext()
+        public MySQLDbContext()
         {
 
         }
 
-        public SqlDbContext(DbContextOptions<SqlDbContext> options) : base(options)
+        public MySQLDbContext(DbContextOptions<MySQLDbContext> options) : base(options)
         {
 
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("server=.;Database=MySite;Trusted_Connection=true;TrustServerCertificate=true");
+            optionsBuilder.UseMySQL("server=localhost;Port=9999;Database=mysite;Uid=root;password=qweasd");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

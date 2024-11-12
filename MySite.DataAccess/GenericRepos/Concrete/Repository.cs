@@ -9,10 +9,10 @@ namespace MySite.DataAccess.GenericRepos.Concrete
     public class Repository<T> : IRepository<T> where T : BaseEntity
     {
 
-        readonly SqlDbContext _dbContext;
+        readonly MySQLDbContext _dbContext;
         public Repository()
         {
-            _dbContext = new SqlDbContext();
+            _dbContext = new MySQLDbContext();
         }
 
 

@@ -34,4 +34,8 @@
     <ProjectReference Include="..\MySite.Entities\MySite.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Admin\Views\User\" />
+  </ItemGroup>
+
 </Project>
