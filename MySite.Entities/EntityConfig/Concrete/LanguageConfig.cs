@@ -11,9 +11,9 @@ namespace MySite.Entities.EntityConfig.Concrete
             base.Configure(builder);
             builder.Property(p => p.Languages).HasMaxLength(50);
 
-            builder.HasData(new Language() { Id = 1, CreateDate = DateTime.Now, Languages = "Turkish Mother Language" });
-            builder.HasData(new Language() { Id = 2, CreateDate = DateTime.Now, Languages = "English Upper Intermediate" });
-            builder.HasData(new Language() { Id = 3, CreateDate = DateTime.Now, Languages = "Germany Elemantary" });
+            builder.HasData(new Language() { Id = 1, CreateDate = DateTime.Now, Languages = "Turkish" ,Description= "Mother Language" });
+            builder.HasData(new Language() { Id = 2, CreateDate = DateTime.Now, Languages = "English", Description = "Upper Intermediate" });
+            builder.HasData(new Language() { Id = 3, CreateDate = DateTime.Now, Languages = "Germany", Description = "Elemantary" });
 
 
         }
