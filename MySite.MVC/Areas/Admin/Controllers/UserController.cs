@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
 using MySite.BL.Abstract;
 using MySite.Entities.Entities.Concrete;
+using MySite_MVC.Areas.Admin.Models_VMs;
 using MySite_MVC.Models.VMs;
 using System.Security.Claims;
 
@@ -24,26 +25,25 @@ namespace MySite_MVC.Areas.Admin.Controllers
             return View(users);
         }
         [HttpGet]
-        public IActionResult UserInsert()
+        public IActionResult UserInsertAdmin()
         {
-
-            UserInsertVM userInsertVM = new UserInsertVM();
-            var roller = roleManager.GetAll();
-            foreach (var role in roller)
+            UserInsertAdminVM userInsertVM = new UserInsertAdminVM();
+            var Roles = roleManager.GetAll();
+            foreach (var role in Roles)
             {
                 CheckBoxVM checkBoxVM = new CheckBoxVM()
                 {
                     Id = role.Id,
                     LabelName = role.RoleName,
                     IsChecked = false
-                };
-                userInsertVM.Roller.Add(checkBoxVM);
 
+                };
+                userInsertVM.Roles.Add(checkBoxVM);
             }
             return View(userInsertVM);
         }
         [HttpPost]
-        public async Task<IActionResult> UserInsert(UserInsertVM insertVM)
+        public async Task<IActionResult> UserInsert(UserInsertAdminVM insertVM)
         {
 
             if (!ModelState.IsValid)
@@ -74,31 +74,40 @@ namespace MySite_MVC.Areas.Admin.Controllers
                 }
             }
             #endregion
-            // Burada insertvm MyUser sinifina çevrilmesi lazim
+            // Burada insertvm User sinifina çevrilmesi lazim
 
             #region Amele Yontemi
-
+            
             User myUser = new User();
             myUser.Name = insertVM.Name;
-            myUser.SurName = insertVM.SurName;
+            myUser.SurName = insertVM.Surname;
             myUser.Email = insertVM.Email;
             myUser.Phone = insertVM.Phone;
+            myUser.Achievements=insertVM.Achievement;
+            myUser.Activities=insertVM.Activities;
+            myUser.Education=insertVM.Education;
+            myUser.Experiances=insertVM.Experience;
+            myUser.Languages=insertVM.Language;
+            myUser.Projects = insertVM.Project;
+            myUser.Skills = insertVM.Skill;
+
 
             myUser.CreateDate = DateTime.Now;
             
             myUser.Password = insertVM.Password;
 
            // myUser.PhotoPath = userImagePAth;
+            
             #endregion
 
-            //var myUser = mapper.Map<MyUser>(insertVM);
+            //var myUser = mapper.Map<User>(insertVM);
             try
             {
                 userManager.Create(myUser);
                 myUser.Roles = new List<Role>();
 
                 #region Kullaniciya check edilen rollerin atanmasi
-                foreach (var item in insertVM.Roller.Where(p => p.IsChecked == true).ToList())
+                foreach (var item in insertVM.Roles.Where(p => p.IsChecked == true).ToList())
                 {
                     var role = roleManager.GetById(item.Id);
                     myUser.Roles.Add(role);
@@ -134,10 +143,28 @@ namespace MySite_MVC.Areas.Admin.Controllers
 
         public IActionResult GetUser()
         {
-            var email = User.FindFirstValue(ClaimTypes.Email);
-            var user = userManager.GetAllInclude(p => p.Email == email, p => p.Roles).FirstOrDefault();
+            var TcNo = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = userManager.GetAllInclude(p => p.Email == TcNo, p => p.Roles).FirstOrDefault();
 
             return View(user);
         }
+        public IActionResult Insert()
+        {
+            
+            return View();
+        }
+        public IActionResult Update()
+        {
+            return View();
+        }
+
+        //public IActionResult Delete()
+        //{
+        //    User myUser = new User();
+            
+        //    myUser.
+        //       // = userManager.Delete()
+        //    return View(myUser);
+        //}
     }
 }
