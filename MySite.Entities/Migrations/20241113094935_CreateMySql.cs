@@ -302,13 +302,13 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "AcDate", "CreateDate", "Description", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateOnly(2013, 2, 1), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2585), "Basketball Distict Cup First Place (Basketbol İlçe Kaymakamlik Kupası) with Karşıyaka Anatolian High school Basketball Team", null },
-                    { 2, new DateOnly(2015, 2, 1), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2581), "2014 - 2015 Basketball Young Girls Province Cup Third Place (2014 - 2015 Basketbol Genç Kızlar İl (İzmir) Kupası) with Karşıyaka Anatolian High school Basketball Team", null },
-                    { 3, new DateOnly(2015, 1, 17), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2574), "Turkish Championship Bilecik Youth Group First Place (Türkiye Şampiyonası Bilecik Basketbol Gençler Grup Birinci) with Karşıyaka Anatolian High School Basketball Team", null },
-                    { 4, new DateOnly(2016, 9, 1), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2570), "Decleration of high honor in dean’s honor list for maintaining a high GPA", null },
-                    { 5, new DateOnly(2017, 2, 1), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2565), "Decleration of honor in dean’s honor list for maintaining a high GPA", null },
-                    { 6, new DateOnly(2016, 1, 1), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2560), "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee", null },
-                    { 7, new DateOnly(2020, 2, 1), new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(2512), "Decleration of honor in dean’s honor list for maintaining a high GPA", null }
+                    { 1, new DateOnly(2013, 2, 1), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1978), "Basketball Distict Cup First Place (Basketbol İlçe Kaymakamlik Kupası) with Karşıyaka Anatolian High school Basketball Team", null },
+                    { 2, new DateOnly(2015, 2, 1), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1973), "2014 - 2015 Basketball Young Girls Province Cup Third Place (2014 - 2015 Basketbol Genç Kızlar İl (İzmir) Kupası) with Karşıyaka Anatolian High school Basketball Team", null },
+                    { 3, new DateOnly(2015, 1, 17), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1965), "Turkish Championship Bilecik Youth Group First Place (Türkiye Şampiyonası Bilecik Basketbol Gençler Grup Birinci) with Karşıyaka Anatolian High School Basketball Team", null },
+                    { 4, new DateOnly(2016, 9, 1), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1960), "Decleration of high honor in dean’s honor list for maintaining a high GPA", null },
+                    { 5, new DateOnly(2017, 2, 1), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1955), "Decleration of honor in dean’s honor list for maintaining a high GPA", null },
+                    { 6, new DateOnly(2016, 1, 1), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1949), "Sabanci University Extracurricular Activities Award Awarded for theatre tours around the country and abroad / Organizing the Offtown Festival with\r\nthe Offtown Committee", null },
+                    { 7, new DateOnly(2020, 2, 1), new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(1904), "Decleration of honor in dean’s honor list for maintaining a high GPA", null }
                 });
 
             migrationBuilder.InsertData(
@@ -316,11 +316,11 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "DateBegining", "DateEnding", "Description", "Title", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(5299), new DateOnly(2015, 9, 1), new DateOnly(2016, 5, 1), "Member", "Sabanci University \"SURK\" Robotics Club", null },
-                    { 2, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(5295), new DateOnly(2017, 9, 1), new DateOnly(2018, 9, 1), "Organizing a nation-wide theatre festival", "\"Üniversitelerarası Tiyatro Festivali\"", null },
-                    { 3, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(5290), new DateOnly(2015, 9, 1), new DateOnly(2018, 9, 1), "Member, media coordinator and media, concert, sponsorship contractor", "Sabanci University Offtown Committee", null },
-                    { 4, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(5284), new DateOnly(2017, 9, 1), new DateOnly(2018, 9, 1), "Co- President", "Sabanci University Drama Club", null },
-                    { 5, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(5256), new DateOnly(2015, 9, 1), new DateOnly(2021, 9, 1), "Member, director and actress", "Sabanci University Drama Club", null }
+                    { 1, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(5170), new DateOnly(2015, 9, 1), new DateOnly(2016, 5, 1), "Member", "Sabanci University \"SURK\" Robotics Club", null },
+                    { 2, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(5165), new DateOnly(2017, 9, 1), new DateOnly(2018, 9, 1), "Organizing a nation-wide theatre festival", "\"Üniversitelerarası Tiyatro Festivali\"", null },
+                    { 3, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(5160), new DateOnly(2015, 9, 1), new DateOnly(2018, 9, 1), "Member, media coordinator and media, concert, sponsorship contractor", "Sabanci University Offtown Committee", null },
+                    { 4, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(5154), new DateOnly(2017, 9, 1), new DateOnly(2018, 9, 1), "Co- President", "Sabanci University Drama Club", null },
+                    { 5, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(5126), new DateOnly(2015, 9, 1), new DateOnly(2021, 9, 1), "Member, director and actress", "Sabanci University Drama Club", null }
                 });
 
             migrationBuilder.InsertData(
@@ -328,8 +328,8 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "Degree", "Description", "ScBeginning", "ScEndning", "ScName", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(8173), "89.90", "", new DateOnly(2010, 9, 1), new DateOnly(2015, 6, 1), "Karşıyaka Anatolian High School", null },
-                    { 2, new DateTime(2024, 11, 12, 13, 41, 20, 132, DateTimeKind.Local).AddTicks(8144), "2,91", "BSC Mechatronics Engineering", new DateOnly(2015, 9, 1), new DateOnly(2021, 2, 4), "Sabancı University", null }
+                    { 1, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(8643), "89.90", "", new DateOnly(2010, 9, 1), new DateOnly(2015, 6, 1), "Karşıyaka Anatolian High School", null },
+                    { 2, new DateTime(2024, 11, 13, 12, 49, 34, 934, DateTimeKind.Local).AddTicks(8613), "2,91", "BSC Mechatronics Engineering", new DateOnly(2015, 9, 1), new DateOnly(2021, 2, 4), "Sabancı University", null }
                 });
 
             migrationBuilder.InsertData(
@@ -337,12 +337,12 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "ExBeginning", "ExDescription", "ExEnding", "ExPlace", "ExTitle", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(818), new DateOnly(2011, 6, 1), "Kept record of the balance sheet by using Excel efficiently Provided report of the profit and loss account statement", new DateOnly(2011, 8, 31), "Ibrahim Ozturk Independent Accountant And Tax Professional", "Asistant", null },
-                    { 2, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(810), new DateOnly(2015, 6, 1), "Attended meetings with the manager of the center Provided correlation in mailing system", new DateOnly(2016, 8, 31), "Efesus Outlet Center", "Part-Time Assistant in Administration", null },
-                    { 3, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(806), new DateOnly(2018, 7, 1), "Planned drama class curriculum Conducted drama and acting class for in the scope of Highschool Summer School", new DateOnly(2018, 8, 31), "Sabanci University", "Creator Drama & Acting Instructor", null },
-                    { 4, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(801), new DateOnly(2017, 7, 1), "Planned drama class curriculum Conducted drama and acting class for in the scope of Highschool Summer School", new DateOnly(2017, 8, 31), "Sabanci University", "Creator Drama & Acting Instructor", null },
-                    { 5, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(796), new DateOnly(2018, 6, 1), "Provided introductory campus tour for visitors. Gave additional information though phone calls and the information stand", new DateOnly(2019, 3, 31), "Sabanci University", "Introduction Team Member", null },
-                    { 6, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(769), new DateOnly(2019, 7, 1), "Assembled and adapted PLC to old German Ring Twisted Machines", new DateOnly(2019, 8, 31), "Kordsa", "Internship", null }
+                    { 1, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(1774), new DateOnly(2011, 6, 1), "Kept record of the balance sheet by using Excel efficiently Provided report of the profit and loss account statement", new DateOnly(2011, 8, 31), "Ibrahim Ozturk Independent Accountant And Tax Professional", "Asistant", null },
+                    { 2, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(1765), new DateOnly(2015, 6, 1), "Attended meetings with the manager of the center Provided correlation in mailing system", new DateOnly(2016, 8, 31), "Efesus Outlet Center", "Part-Time Assistant in Administration", null },
+                    { 3, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(1761), new DateOnly(2018, 7, 1), "Planned drama class curriculum Conducted drama and acting class for in the scope of Highschool Summer School", new DateOnly(2018, 8, 31), "Sabanci University", "Creator Drama & Acting Instructor", null },
+                    { 4, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(1756), new DateOnly(2017, 7, 1), "Planned drama class curriculum Conducted drama and acting class for in the scope of Highschool Summer School", new DateOnly(2017, 8, 31), "Sabanci University", "Creator Drama & Acting Instructor", null },
+                    { 5, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(1750), new DateOnly(2018, 6, 1), "Provided introductory campus tour for visitors. Gave additional information though phone calls and the information stand", new DateOnly(2019, 3, 31), "Sabanci University", "Introduction Team Member", null },
+                    { 6, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(1713), new DateOnly(2019, 7, 1), "Assembled and adapted PLC to old German Ring Twisted Machines", new DateOnly(2019, 8, 31), "Kordsa", "Internship", null }
                 });
 
             migrationBuilder.InsertData(
@@ -350,9 +350,9 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "Description", "Languages", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(3690), "Mother Language", "Turkish", null },
-                    { 2, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(3714), "Upper Intermediate", "English", null },
-                    { 3, new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(3718), "Elemantary", "Germany", null }
+                    { 1, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(4717), "Mother Language", "Turkish", null },
+                    { 2, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(4739), "Upper Intermediate", "English", null },
+                    { 3, new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(4744), "Elemantary", "Germany", null }
                 });
 
             migrationBuilder.InsertData(
@@ -360,14 +360,14 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "Date", "Description", "Title", "UserId" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(71), new DateOnly(2015, 12, 30), "Voluntarily contributed to the social improvements of elementary school students in Istanbul", "Civic Involvement Project", null },
-                    { 2, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(68), new DateOnly(2016, 12, 30), "Provided market analysis by conducting polls for several products By analyzing polls defined the relationship between consumption choice and Evolutionary Roots", "Researching Evolutionary Roots of Consumption", null },
-                    { 3, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(64), new DateOnly(2018, 12, 30), "Provided comprehensive 3D construction of a bicycle in Solidworks including dynamic parts", "Implementing Bicycle in to Solidworks", null },
-                    { 4, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(57), new DateOnly(2019, 12, 30), "Designing a system containing, wiring and coding given as a class project using Siemens Simatic, BECKHOFF Twincat and PLC", "Production Line Design with PLC", null },
-                    { 5, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(53), new DateOnly(2020, 6, 1), "Simulated desired design using MATLAB Simulink, researched bio-mechatronic market extensively, designed a system using Solidworks", "Designing a Portable Arm Injection System", null },
-                    { 6, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(49), new DateOnly(2020, 6, 1), "Simulated and analyzed energy harvesting of piezoelectric sensor using MATLAB Simulink", "Piezoelectric Energy Harvesters", null },
-                    { 7, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(45), new DateOnly(2021, 2, 4), "Designed and simulated a wheeled robot system of 2 DOF using MATLAB Simulink & Solidworks that moves and recognizes the obstacle", "Bilateral Steering for a Mobile Robot", null },
-                    { 8, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(18), new DateOnly(2021, 9, 1), "Designed a lower-limb exoskeleton and improved the prototypes for the walk and rehabilitation of the paraplegic people. Joined the Biotechnology Innovation Competition with this project in Teknofest 2021", "Lower-Limb Exoskeleton with EEG/Team EXONIX", null }
+                    { 1, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2309), new DateOnly(2015, 12, 30), "Voluntarily contributed to the social improvements of elementary school students in Istanbul", "Civic Involvement Project", null },
+                    { 2, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2304), new DateOnly(2016, 12, 30), "Provided market analysis by conducting polls for several products By analyzing polls defined the relationship between consumption choice and Evolutionary Roots", "Researching Evolutionary Roots of Consumption", null },
+                    { 3, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2300), new DateOnly(2018, 12, 30), "Provided comprehensive 3D construction of a bicycle in Solidworks including dynamic parts", "Implementing Bicycle in to Solidworks", null },
+                    { 4, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2293), new DateOnly(2019, 12, 30), "Designing a system containing, wiring and coding given as a class project using Siemens Simatic, BECKHOFF Twincat and PLC", "Production Line Design with PLC", null },
+                    { 5, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2289), new DateOnly(2020, 6, 1), "Simulated desired design using MATLAB Simulink, researched bio-mechatronic market extensively, designed a system using Solidworks", "Designing a Portable Arm Injection System", null },
+                    { 6, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2285), new DateOnly(2020, 6, 1), "Simulated and analyzed energy harvesting of piezoelectric sensor using MATLAB Simulink", "Piezoelectric Energy Harvesters", null },
+                    { 7, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2279), new DateOnly(2021, 2, 4), "Designed and simulated a wheeled robot system of 2 DOF using MATLAB Simulink & Solidworks that moves and recognizes the obstacle", "Bilateral Steering for a Mobile Robot", null },
+                    { 8, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(2252), new DateOnly(2021, 9, 1), "Designed a lower-limb exoskeleton and improved the prototypes for the walk and rehabilitation of the paraplegic people. Joined the Biotechnology Innovation Competition with this project in Teknofest 2021", "Lower-Limb Exoskeleton with EEG/Team EXONIX", null }
                 });
 
             migrationBuilder.InsertData(
@@ -375,8 +375,8 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "CreateDate", "RoleName" },
                 values: new object[,]
                 {
-                    { 1, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(3008), "Admin" },
-                    { 2, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(3031), "User" }
+                    { 1, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(5602), "Admin" },
+                    { 2, new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(5624), "User" }
                 });
 
             migrationBuilder.InsertData(
@@ -384,44 +384,44 @@ namespace MySite.Entities.Migrations
                 columns: new[] { "Id", "ComputerSkills", "CreateDate", "UserId" },
                 values: new object[,]
                 {
-                    { 1, "Microsoft Office Tools: Word, Excel, PowerPoint", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5357), null },
-                    { 2, "PLC", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5378), null },
-                    { 3, "Arduino", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5382), null },
-                    { 4, "MATLAB", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5386), null },
-                    { 5, "Solidworks", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5389), null },
-                    { 6, "COMSOL", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5396), null },
-                    { 7, "Xilinx", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5399), null },
-                    { 8, "Solidworks", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5403), null },
-                    { 9, "Microsoft Visual Studio, Microsoft Visual Codes, C#", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5419), null },
-                    { 10, "SQL, PostgreSQL, SQLite", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5423), null },
-                    { 11, "\r\nObject-Oriented Programming (OOP)", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5427), null },
-                    { 12, "\r\nEntity Framework (EF) Core", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5430), null },
-                    { 13, "\r\nHTML, CSS", new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(5434), null }
+                    { 1, "Microsoft Office Tools: Word, Excel, PowerPoint", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8259), null },
+                    { 2, "PLC", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8283), null },
+                    { 3, "Arduino", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8288), null },
+                    { 4, "MATLAB", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8292), null },
+                    { 5, "Solidworks", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8297), null },
+                    { 6, "COMSOL", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8305), null },
+                    { 7, "Xilinx", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8309), null },
+                    { 8, "Solidworks", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8314), null },
+                    { 9, "Microsoft Visual Studio, Microsoft Visual Codes, C#", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8318), null },
+                    { 10, "SQL, PostgreSQL, SQLite", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8323), null },
+                    { 11, "\r\nObject-Oriented Programming (OOP)", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8327), null },
+                    { 12, "\r\nEntity Framework (EF) Core", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8330), null },
+                    { 13, "\r\nHTML, CSS", new DateTime(2024, 11, 13, 12, 49, 34, 936, DateTimeKind.Local).AddTicks(8334), null }
                 });
 
             migrationBuilder.InsertData(
                 table: "SocialMedias",
                 columns: new[] { "Id", "CreateDate", "Icon", "Medialink", "Name", "UserId" },
-                values: new object[] { 1, new DateTime(2024, 11, 12, 13, 41, 20, 134, DateTimeKind.Local).AddTicks(9517), null, "\r\nhttps://www.linkedin.com/in/idil-erdoğan-725458159/", "LinkedIn", null });
+                values: new object[] { 1, new DateTime(2024, 11, 13, 12, 49, 34, 937, DateTimeKind.Local).AddTicks(892), null, "\r\nhttps://www.linkedin.com/in/idil-erdoğan-725458159/", "LinkedIn", null });
 
             migrationBuilder.InsertData(
                 table: "Users",
                 columns: new[] { "Id", "CreateDate", "Description", "Email", "Name", "Password", "Phone", "SurName", "UserName" },
-                values: new object[] { 1, new DateTime(2024, 11, 12, 13, 41, 20, 135, DateTimeKind.Local).AddTicks(3981), "", "idilerdogan@sabanciuniv.edu", "İdil", "qwe", "+90 539 371 69 85", "Erdoğan", "idilerdogan" });
+                values: new object[] { 1, new DateTime(2024, 11, 13, 12, 49, 34, 937, DateTimeKind.Local).AddTicks(5070), "", "idilerdogan@sabanciuniv.edu", "İdil", "qwe", "+90 539 371 69 85", "Erdoğan", "idilerdogan" });
 
             migrationBuilder.InsertData(
                 table: "MainMenus",
                 columns: new[] { "Id", "ActionName", "AreaName", "ClassName", "ControllerName", "CreateDate", "CssName", "IconName", "MenuName", "OrderNo", "ParentMenuId", "RoleId" },
                 values: new object[,]
                 {
-                    { 1, "About", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7032), "#about", null, "About", null, null, 1 },
-                    { 2, "Education", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7039), "#education", null, "Education", null, null, 1 },
-                    { 3, "Experience", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7041), "#experience", null, "Experience", null, null, 1 },
-                    { 4, "Project", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7043), "#project", null, "Projects", null, null, 1 },
-                    { 5, "Skill", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7044), "#skill", null, "Skills", null, null, 1 },
-                    { 6, "Achievement", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7046), "#achievement", null, "Achievements", null, null, 1 },
-                    { 7, "Activitie", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7048), "#activitie", null, "Activities", null, null, 1 },
-                    { 8, "Language", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 12, 13, 41, 20, 133, DateTimeKind.Local).AddTicks(7050), "#language", null, "Languages", null, null, 1 }
+                    { 1, "About", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8594), "#about", null, "About", null, null, 1 },
+                    { 2, "Education", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8600), "#education", null, "Education", null, null, 1 },
+                    { 3, "Experience", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8602), "#experience", null, "Experience", null, null, 1 },
+                    { 4, "Project", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8604), "#project", null, "Projects", null, null, 1 },
+                    { 5, "Skill", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8606), "#skill", null, "Skills", null, null, 1 },
+                    { 6, "Achievement", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8608), "#achievement", null, "Achievements", null, null, 1 },
+                    { 7, "Activitie", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8610), "#activitie", null, "Activities", null, null, 1 },
+                    { 8, "Language", null, "far fa-circle nav-icon", "Home", new DateTime(2024, 11, 13, 12, 49, 34, 935, DateTimeKind.Local).AddTicks(8612), "#language", null, "Languages", null, null, 1 }
                 });
 
             migrationBuilder.CreateIndex(

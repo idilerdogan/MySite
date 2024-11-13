@@ -34,7 +34,7 @@ namespace MySite.Entities.DbContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseMySQL("server=localhost;Port=9999;Database=mysite;Uid=root;password=qweasd");
+            optionsBuilder.UseMySQL("server=host.docker.internal;Port=9999;Database=mysite;Uid=root;password=qweasd");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
