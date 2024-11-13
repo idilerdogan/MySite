@@ -6,8 +6,8 @@ namespace MySite.Entities.Entities.Concrete
     {
         public string ExPlace { get; set; }
         public string ExTitle { get; set; }
-        public DateOnly ExBeginning { get; set; }
-        public DateOnly ExEnding { get; set; }
+        public DateTime ExBeginning { get; set; }
+        public DateTime ExEnding { get; set; }
         public string ExDescription { get; set; }
 
     }
