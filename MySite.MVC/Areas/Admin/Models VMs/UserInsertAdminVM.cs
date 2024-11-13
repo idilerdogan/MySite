@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using MySite_MVC.Models.VMs;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel;
-using AspNetCoreGeneratedDocument;
+using Microsoft.AspNetCore.Mvc;
 using MySite.Entities.Entities.Concrete;
+using MySite_MVC.Models.VMs;
 
 namespace MySite_MVC.Areas.Admin.Models_VMs
 {
@@ -47,10 +46,10 @@ namespace MySite_MVC.Areas.Admin.Models_VMs
 
         //    [MaxLength(50, ErrorMessage ="Dosya büyüklüğü en fazla 50 Mb olmalıdır")]
         public IFormFile Picture { get; set; }
-        
+
         public List<Achievement>? Achievement { get; set; }
         public List<Activitie>? Activities { get; set; }
-        public List<Education>? Education { get; set;}
+        public List<Education>? Education { get; set; }
         public List<Experience>? Experience { get; set; }
         public List<Language>? Language { get; set; }
         public List<Project>? Project { get; set; }

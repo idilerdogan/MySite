@@ -34,7 +34,7 @@ namespace MySite.Entities.DbContexts
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //base.OnConfiguring(optionsBuilder);
-            optionsBuilder.UseSqlServer("server=.;Database=MySite;Trusted_Connection=true;TrustServerCertificate=true");
+            optionsBuilder.UseSqlServer("server=IDILERDOGAN\\MSSQLSERVER01;Database=MySite;Trusted_Connection=true;TrustServerCertificate=true");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

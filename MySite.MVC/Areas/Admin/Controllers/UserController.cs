@@ -1,4 +1,5 @@
-﻿using AspNetCoreHero.ToastNotification.Abstractions;
+﻿using System.Security.Claims;
+using AspNetCoreHero.ToastNotification.Abstractions;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +8,6 @@ using MySite.BL.Abstract;
 using MySite.Entities.Entities.Concrete;
 using MySite_MVC.Areas.Admin.Models_VMs;
 using MySite_MVC.Models.VMs;
-using System.Security.Claims;
 
 namespace MySite_MVC.Areas.Admin.Controllers
 {
@@ -77,27 +77,27 @@ namespace MySite_MVC.Areas.Admin.Controllers
             // Burada insertvm User sinifina çevrilmesi lazim
 
             #region Amele Yontemi
-            
+
             User myUser = new User();
             myUser.Name = insertVM.Name;
             myUser.SurName = insertVM.Surname;
             myUser.Email = insertVM.Email;
             myUser.Phone = insertVM.Phone;
-            myUser.Achievements=insertVM.Achievement;
-            myUser.Activities=insertVM.Activities;
-            myUser.Education=insertVM.Education;
-            myUser.Experiances=insertVM.Experience;
-            myUser.Languages=insertVM.Language;
+            myUser.Achievements = insertVM.Achievement;
+            myUser.Activities = insertVM.Activities;
+            myUser.Education = insertVM.Education;
+            myUser.Experiances = insertVM.Experience;
+            myUser.Languages = insertVM.Language;
             myUser.Projects = insertVM.Project;
             myUser.Skills = insertVM.Skill;
 
 
             myUser.CreateDate = DateTime.Now;
-            
+
             myUser.Password = insertVM.Password;
 
-           // myUser.PhotoPath = userImagePAth;
-            
+            // myUser.PhotoPath = userImagePAth;
+
             #endregion
 
             //var myUser = mapper.Map<User>(insertVM);
@@ -148,23 +148,24 @@ namespace MySite_MVC.Areas.Admin.Controllers
 
             return View(user);
         }
-        public IActionResult Insert()
+        public async Task<IActionResult> EditUser(UserInsertAdminVM insertVM)
         {
-            
-            return View();
-        }
-        public IActionResult Update()
-        {
-            return View();
+            User myUser = new User();
+
+            //userManager.Update(myUser);
+
+
+
+            return View(insertVM);
         }
 
-        //public IActionResult Delete()
-        //{
-        //    User myUser = new User();
-            
-        //    myUser.
-        //       // = userManager.Delete()
-        //    return View(myUser);
-        //}
+        public async Task<IActionResult> DeleteUser(UserInsertAdminVM insertVM)
+        {
+            User myUser = new User();
+
+            userManager.Delete(myUser);
+
+            return View(insertVM);
+        }
     }
 }
