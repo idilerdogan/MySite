@@ -32,6 +32,11 @@
 
                         <a asp-action="GetUser" asp-controller="User" asp-area="Admin" class="d-block">@User.Identity.Name</a>
                     }
+                    else
+                    {
+                        <a class="navbar-brand text-dark" asp-area="" asp-controller="Account" asp-action="Login">Giriş</a>
+                    }
+
 
                 </div>
             </div>
